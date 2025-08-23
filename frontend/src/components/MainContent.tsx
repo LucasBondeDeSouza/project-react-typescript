@@ -131,7 +131,7 @@ export default () => {
                     <button 
                         onClick={() => handlePageChange(currentPage - 1)} 
                         disabled={currentPage == 1}
-                        className="border px-4 py-2 mx-2 rounded-full"
+                        className="border px-4 py-2 mx-2 rounded-full cursor-pointer"
                     >Previous</button>
 
                     {/* 1, 2, 3, 4, 5 */}
@@ -141,7 +141,7 @@ export default () => {
                             <button 
                                 key={page} 
                                 onClick={() => handlePageChange(page)} 
-                                className={`border px-4 py-2 mx-1 rounded-full ${page == currentPage ? 'bg-black text-white' : ''}`}
+                                className={`border px-4 py-2 mx-1 rounded-full cursor-pointer ${page == currentPage ? 'bg-black text-white' : ''}`}
                             >{page}</button>
                         ))}
                     </div>
@@ -150,7 +150,7 @@ export default () => {
                     <button 
                         onClick={(() => handlePageChange(currentPage + 1))}
                         disabled={currentPage == totalPages}
-                        className="border px-4 py-2 mx-2 rounded-full"
+                        className="border px-4 py-2 mx-2 rounded-full cursor-pointer"
                     >Next</button>
                 </div>
             </div>
